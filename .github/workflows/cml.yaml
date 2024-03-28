@@ -23,4 +23,19 @@ jobs:
 
           echo "Model Metrics"
           cat metrics.txt
+
+
+          # echo "##Model Metrics"b > report.md
+          # cat metrics.txt >> report.md
+            
+            echo "D##ata Visualization " >> report.md
+            cml-publish faeture-importance.png --md  >> report.png
+            cmd-publish residuals.png --md >> report.png
+
+            cmd-send-comment report.md
+            
+            
+
+
+          
           
