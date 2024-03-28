@@ -16,7 +16,7 @@ jobs:
       #     python-version: '3.x'
       - uses: iterative/setup-cml@v1
         env:
-          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_TOKEN: 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
       - name: Train model
         run: |
           # Your ML workflow goes here
